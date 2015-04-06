@@ -38,22 +38,33 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ets-qF-HzM"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter information:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pei-Xp-V3E">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="109" y="151" width="182" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="TkE-V3-lq9"/>
                                 <exclude reference="20N-sC-fee"/>
+                                <exclude reference="Pei-Xp-V3E"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="TkE-V3-lq9"/>
                                 <include reference="20N-sC-fee"/>
+                                <include reference="Pei-Xp-V3E"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="textField" destination="Pei-Xp-V3E" id="JRe-Y2-cmO"/>
                         <outlet property="titleLabel" destination="TkE-V3-lq9" id="Pm8-9k-r75"/>
                     </connections>
                 </viewController>
