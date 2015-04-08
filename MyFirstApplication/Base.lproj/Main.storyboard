@@ -88,6 +88,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HJn-Ic-PSt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lob-An-jdM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="8Cj-zX-VOV">

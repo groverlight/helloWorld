@@ -24,6 +24,7 @@
 {
 
     self.titleLabel.text = self.textField.text;
+    self.titleLabel.textColor = [UIColor cyanColor];
     [self.textField resignFirstResponder];
 
 }
