@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ml6-g8-kKr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,44 +23,83 @@
                                 <state key="normal" title="Press Me!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="101" y="177" width="199" height="30"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="101" y="178" width="199" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ets-qF-HzM"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Information" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pei-Xp-V3E">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="109" y="228" width="182" height="30"/>
-                                </variation>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkE-V3-lq9">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <color key="textColor" red="0.98594826459884644" green="0.10418501748506345" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="122" y="94" width="157" height="39"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="122" y="93" width="157" height="39"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Information" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pei-Xp-V3E">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pei-Xp-V3E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="93" id="77q-fp-BBl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Pei-Xp-V3E" secondAttribute="bottom" constant="321" id="ACx-DC-ToI"/>
+                            <constraint firstItem="Pei-Xp-V3E" firstAttribute="top" secondItem="20N-sC-fee" secondAttribute="bottom" constant="20" id="CoG-oP-lsm"/>
+                            <constraint firstItem="Pei-Xp-V3E" firstAttribute="top" secondItem="20N-sC-fee" secondAttribute="bottom" constant="41" id="GJl-qo-NQ5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="20N-sC-fee" secondAttribute="trailing" constant="84" id="JEC-PO-hx7"/>
+                            <constraint firstItem="20N-sC-fee" firstAttribute="top" secondItem="TkE-V3-lq9" secondAttribute="bottom" constant="45" id="MIh-DZ-ovY"/>
+                            <constraint firstItem="20N-sC-fee" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="85" id="Qey-06-A6B"/>
+                            <constraint firstItem="20N-sC-fee" firstAttribute="top" secondItem="TkE-V3-lq9" secondAttribute="bottom" constant="46" id="Wnu-C8-4PU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pei-Xp-V3E" secondAttribute="trailing" constant="93" id="Y5s-fx-ofZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TkE-V3-lq9" secondAttribute="trailing" constant="105" id="dje-yF-ebd"/>
+                            <constraint firstItem="TkE-V3-lq9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="29" id="gX6-ZM-YDW"/>
+                            <constraint firstItem="TkE-V3-lq9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="106" id="xuU-dk-SaN"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="20N-sC-fee"/>
-                                <exclude reference="Pei-Xp-V3E"/>
                                 <exclude reference="TkE-V3-lq9"/>
+                                <exclude reference="Pei-Xp-V3E"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="dje-yF-ebd"/>
+                                <exclude reference="gX6-ZM-YDW"/>
+                                <exclude reference="xuU-dk-SaN"/>
+                                <exclude reference="JEC-PO-hx7"/>
+                                <exclude reference="MIh-DZ-ovY"/>
+                                <exclude reference="Qey-06-A6B"/>
+                                <exclude reference="Wnu-C8-4PU"/>
+                                <exclude reference="77q-fp-BBl"/>
+                                <exclude reference="CoG-oP-lsm"/>
+                                <exclude reference="GJl-qo-NQ5"/>
+                                <exclude reference="Y5s-fx-ofZ"/>
+                                <exclude reference="ACx-DC-ToI"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="20N-sC-fee"/>
-                                <include reference="Pei-Xp-V3E"/>
                                 <include reference="TkE-V3-lq9"/>
+                                <include reference="Pei-Xp-V3E"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="dje-yF-ebd"/>
+                                <include reference="gX6-ZM-YDW"/>
+                                <include reference="xuU-dk-SaN"/>
+                                <include reference="JEC-PO-hx7"/>
+                                <include reference="MIh-DZ-ovY"/>
+                                <include reference="Qey-06-A6B"/>
+                                <include reference="Wnu-C8-4PU"/>
+                                <include reference="77q-fp-BBl"/>
+                                <include reference="CoG-oP-lsm"/>
+                                <include reference="GJl-qo-NQ5"/>
+                                <include reference="Y5s-fx-ofZ"/>
+                                <include reference="ACx-DC-ToI"/>
                             </mask>
                         </variation>
                     </view>
